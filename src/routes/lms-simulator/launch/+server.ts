@@ -1,12 +1,13 @@
 import { redirect } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import {
+import { env } from '$env/dynamic/private';
+
+const {
   LMS_ISSUER,
   LMS_CLIENT_ID,
   TOOL_LAUNCH_URI,
   TOOL_LOGIN_ENDPOINT
-} from '$env/static/private';
-
+} = env;
 export const POST: RequestHandler = async ({ request, cookies }) => {
   // 서버에서 설정값 가져오기
   const issuer = LMS_ISSUER;
