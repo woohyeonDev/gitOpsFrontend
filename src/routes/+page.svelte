@@ -3,7 +3,7 @@
 
   // Mock data for demo
   let user = {
-    name: 'marco jeong',
+    name: 'karim jeong',
     avatar: 'https://ui-avatars.com/api/?name=John+Doe&background=4a90e2&color=fff',
     email: 'john.doe@example.com'
   };
